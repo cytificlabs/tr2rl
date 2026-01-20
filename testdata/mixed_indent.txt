@@ -1,0 +1,10 @@
+project_root/
+	src/
+    	main.go  # Entry point
+        utils/
+        	helper.go
+    tests/
+    	internal/
+        	parser_test.go // Key test file
+README.md
+LICENSE

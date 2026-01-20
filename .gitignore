@@ -1,0 +1,25 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+dist/
+tr2rl.exe
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage
+*.out
+coverage.*
+*.coverprofile
+
+# Dev artifacts
+tst/
+arxml_explorer/
+*.log
+
+# Editor
+.vscode/
+.idea/

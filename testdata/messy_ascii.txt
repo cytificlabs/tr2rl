@@ -1,0 +1,9 @@
+backend
+|-- api
+|   |-- handlers
+|   |   `-- auth.go
+|   `-- middlewares
+|       +-- cors.go
+|-- config
+    `-- db.yaml  <-- Missing pipe before backtick, parser should guess
+cmd/server/main.go <-- Mixed in path-like entry

@@ -1,0 +1,14 @@
+my_project
+  src
+    components
+      Header.tsx
+      Footer.tsx
+    utils
+      helper.ts
+  public
+    index.html
+  README.md
+  
+  # This block has irregular indentation
+  irregular_folder
+      deep_file.txt (jumped indent)

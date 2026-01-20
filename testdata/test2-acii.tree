@@ -1,0 +1,12 @@
+arxml_explorer
+|-- core
+|   |-- model/
+|   |   |-- entity.py
+|   |   |  relationship.py     # missing marker
+|   |   `-- workspace.py
+|   |-- index
+|   |   `-- entity_index.py
+|   `-- __init__.py
+|-- tests
+|   `-- test_core_model.py
+`-- main.py

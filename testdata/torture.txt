@@ -1,0 +1,22 @@
+# The Ultimate Torture Test for tr2rl
+
+project_root/
+├── src/
+│   ├── components/  # Core UI
+│   │   ├── Header.tsx // Main header
+│   │   └─  Footer.tsx
+│   +-- utils
+│       |-- helper.js
+|       `-- data.json
+├── docs
+│   ├── v1.0/        <-- folder with dot
+│   ├── GUIDE.md
+|-- legacy
+|   +-- old_script.bat
+|   `-- .config      <-- dotfile
+    indent_mode_file.txt  <-- sudden indent switch
+    subfolder/
+        nested_file.go
+C:\Users\User\Absolute\Path.txt  <-- Windows absolute path input?
+// Just a comment line
+TODO: Fix this

@@ -1,0 +1,12 @@
+# Complex Root Test
+# This mocks a messy README copy-paste
+  
+  implicit_root_folder
+  |--  child_1
+  |    |-- subchild (file)
+  |--  child_2/
+       |-- sibling_file.txt
+       `-- another_file.log
+
+# Another separate tree (path list style mixed in?)
+independent_file.txt

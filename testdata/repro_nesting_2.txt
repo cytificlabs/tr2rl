@@ -1,0 +1,3 @@
+root/
+│   │   ├── Header.tsx // Main header
+│   │   └─  Footer.tsx

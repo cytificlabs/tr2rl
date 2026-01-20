@@ -1,0 +1,8 @@
+arxml_explorer/
+|-- core/
+|       |-- model/
+|   |-- entity.py
+random garbage line that should be ignored
+|-- tests/
+|   `-- test_core_model.py
+`-- main.py

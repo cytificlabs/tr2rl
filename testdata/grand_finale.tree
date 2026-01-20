@@ -1,0 +1,30 @@
+# The Grand Finale Test
+# Combines: Unicode, ASCII, Windows Paths, Path Lists, Comments, Spaces
+
+root_project/
+├── standard_unix/
+│   ├── main.go
+│   └── Makefile
++---windows_legacy
+|   +---subfolder
+|   |   \---legacy_file.bat
+|   \---Program Files
+|       \---Info.txt
+src/path/list/style/file.js
+C:\Users\User\Windows\Absolute\Path.log
+   
+   indented_section
+     with spaces in name.txt
+     nested
+       deep.json
+
+# Random junk that should be ignored
+----------------------------------
+Folder PATH listing for volume OS
+Volume serial number is 1234
+----------------------------------
+
+// Comments
+├── mixed_markers
+|-- ascii_sibling
+`-- last_one

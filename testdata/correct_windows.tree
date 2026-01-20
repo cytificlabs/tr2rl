@@ -1,0 +1,14 @@
+arxml_explorer/
+|-- core/
+|   |-- model/
+|   |   |-- entity.py
+|   |   |-- relationship.py
+|   |   |-- workspace.py
+|   |   `-- __init__.py
+|   |-- index/
+|   |   |-- entity_index.py
+|   |   `-- __init__.py
+|   `-- __init__.py
+|-- tests/
+|   `-- test_core_model.py
+`-- main.py

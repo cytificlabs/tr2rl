@@ -1,0 +1,10 @@
+populate_test/
+├── main.go          # Should have package main
+├── app.py           # Should have def main()
+├── script.sh        # Should have Shebang
+├── index.html       # Should have HTML skeleton
+├── config.json      # Should be {}
+├── Dockerfile       # Should have FROM
+├── Makefile         # Should have target
+├── unknown.xyz      # Should be empty
+└── LICENSE          # Should have MIT text
