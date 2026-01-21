@@ -43,4 +43,17 @@ func init() {
 	rootCmd.PersistentFlags().Bool("clipboard", false, "read input from clipboard")
 	rootCmd.PersistentFlags().String("color", "auto", "color output: auto|always|never")
 	rootCmd.PersistentFlags().Bool("json", false, "JSON output (for spec/format)")
+
+	rootCmd.AddCommand(versionCmd)
+}
+
+// Version is injected by ldflags at build time
+var Version = "dev"
+
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Print the version number of tr2rl",
+	Run: func(cmd *cobra.Command, args []string) {
+		cmd.Println("tr2rl version", Version)
+	},
 }

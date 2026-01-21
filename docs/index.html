@@ -4,24 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tr2rl - Turn ChatGPT Trees into Real Files</title>
+    <title>tr2rl - Turn Text Directory Trees into Real Files</title>
 
     <!-- SEO & Meta Tags -->
     <meta name="description"
-        content="The fastest way to turn text-based directory trees (from ChatGPT, Claude, or ASCII) into actual files on your computer. A free, open-source CLI scaffolding tool.">
+        content="The fastest way to turn text-based directory trees (from Tutorials, Documentation, AI, or ASCII) into actual files on your computer. A free, open-source CLI scaffolding tool.">
     <meta name="keywords"
-        content="directory tree generator, chatgpt to files, ai coding tool, scaffolding cli, text to filesystem, ascii tree converter, golang cli">
+        content="directory tree generator, scaffolding cli, text to filesystem, ascii tree converter, golang cli, project structure builder">
     <meta name="author" content="tr2rl">
 
     <!-- Social Sharing (Open Graph) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="tr2rl - The Missing AI-to-Filesystem Bridge">
+    <meta property="og:title" content="tr2rl - The Text-to-Filesystem Bridge">
     <meta property="og:description"
-        content="Don't create folders manually. Paste your tree, build your project. Works with any AI output.">
+        content="Stop creating folders manually. Paste any directory tree (Unicode/ASCII), build your project instantly. Works with AI, Docs, and Tutorials.">
     <meta property="og:image" content="https://tr2rl.github.io/tr2rl/assets/social-card.png">
     <!-- Placeholder for future image -->
     <meta property="og:url" content="https://tr2rl.github.io/tr2rl/">
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Structured Data (JSON-LD) for Google & AI Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "tr2rl",
+      "operatingSystem": "Windows, macOS, Linux",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD"
+      },
+      "description": "A CLI tool that turns text-based directory trees from AI (ChatGPT) into real files.",
+      "softwareVersion": "1.0.0",
+      "author": {
+          "@type": "Organization",
+          "name": "Cytific Labs",
+          "url": "https://github.com/cytificlabs"
+      },
+      "downloadUrl": "https://github.com/cytificlabs/tr2rl/releases"
+    }
+    </script>
     <style>
         :root {
             --bg: #0a0a0a;
@@ -266,7 +290,7 @@
             actual files and folders instantly.</p>
 
         <div class="cta-group">
-            <a href="https://github.com/cytificlabs/tr2rl/releases" class="btn btn-primary">Download v1.0</a>
+            <a href="https://github.com/cytificlabs/tr2rl/releases" class="btn btn-primary">Download Latest</a>
             <a href="https://github.com/cytificlabs/tr2rl" class="btn btn-secondary">View on GitHub</a>
         </div>
 
@@ -320,8 +344,15 @@
     </section>
 
     <footer>
-        <p>Released under MIT License. Open Source.</p>
+        <p>&copy; <span id="year"></span> Cytific Labs. Released under MIT License.</p>
+        <p style="margin-top: 10px; font-size: 0.85em; color: #666;">Made with ❤️ by <strong
+                style="color: #fff;">cosmicquark</strong> and <strong style="color: #fff;">Google Antigravity</strong>
+            for everyone.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 

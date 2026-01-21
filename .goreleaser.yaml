@@ -11,6 +11,8 @@ builds:
     binary: tr2rl
     env:
       - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X github.com/cytificlabs/tr2rl/cmd.Version={{.Version}}
     goos:
       - linux
       - windows

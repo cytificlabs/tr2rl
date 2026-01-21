@@ -13,6 +13,12 @@
 
 [Features](#-features) • [Installation](#-installation) • [Examples](#-examples) • [Usage](#-usage) • [Contributing](#-contributing)
 
+<br>
+
+<a href="https://cytificlabs.github.io/tr2rl/">
+  <img src="https://img.shields.io/badge/🌐_Website-Live_Demo-blue?style=for-the-badge&logo=github" height="30">
+</a>
+
 </div>
 
 ---
@@ -47,6 +53,11 @@
 1.  Use the "Dry Run" flag:
 2.  Run: `tr2rl build --clipboard --dry-run`
     > *What this does: It shows you a **preview list** of every file that WOULD be created, but it **does not touch your disk** yet. Use this to be safe.*
+
+**"I'm following a tutorial with a big file tree."**
+1.  Copy the tree text from the blog post or documentation.
+2.  Run: `tr2rl build --clipboard`
+    > *What this does: It turns that static text diagram into a real starter project instantly.*
 
 **"I have this messy text from a friend."**
 1.  Paste it into a file called `plan.txt`.
@@ -205,3 +216,9 @@ If `tr2rl` saved you time, consider supporting the development!
 
 ## 📜 License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+<br>
+
+<div align="center">
+  <p>Made with ❤️ by <b>cosmicquark</b> and <b>Google Antigravity</b> for everyone.</p>
+</div>
