@@ -72,7 +72,7 @@ scoops:
 snaps:
   - name: tr2rl
     summary: Turn messy text trees into real files
-    publish: true
+    publish: false
 
 # Release via GitHub Releases is enabled by default.
 # Release via GitHub Releases is enabled by default.
