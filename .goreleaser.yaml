@@ -69,15 +69,16 @@ scoops:
 
 # Note: Snapcraft (Linux Store) configuration requires a snapcraft.yaml login, 
 # but GoReleaser can generate the metadata.
-# snaps:
-#   - name: tr2rl
-#     summary: Turn messy text trees into real files
-#     publish: true
+snaps:
+  - name: tr2rl
+    summary: Turn messy text trees into real files
+    publish: true
 
 # Release via GitHub Releases is enabled by default.
-releases:
-  - github:
-      owner: cytificlabs
-      name: tr2rl
-    draft: false
-    prerelease: auto
+# Release via GitHub Releases is enabled by default.
+release:
+  github:
+    owner: cytificlabs
+    name: tr2rl
+  draft: false
+  prerelease: auto
