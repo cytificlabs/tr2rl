@@ -124,24 +124,30 @@ Turn a messy text file into a clean, shareable tree diagram.
 
 ## 📦 Installation Guide
 
-### Option 1: Download Binaries (Recommended)
-Go to the [**Releases Page**](https://github.com/cytificlabs/tr2rl/releases) and download the file for your system:
+### Option 1: Package Managers (Recommended)
 
-| Cloud / OS | Architecture | File to Download | Notes |
-|:---|:---|:---|:---|
-| **Windows** | Intel/AMD (Standard) | `tr2rl_..._Windows_x86_64.zip` | Most common for PC/Laptop. |
-| **Windows** | ARM64 (Snapdragon) | `tr2rl_..._Windows_arm64.zip` | For Surface Pro X, etc. |
-| **macOS** | Apple Silicon (M1/M2/M3) | `tr2rl_..._Darwin_arm64.tar.gz` | Most new Macs. |
-| **macOS** | Intel | `tr2rl_..._Darwin_x86_64.tar.gz` | Older Macs. |
-| **Linux** | Intel/AMD | `tr2rl_..._Linux_x86_64.tar.gz` | Standard servers/desktops. |
-| **Linux** | ARM64 | `tr2rl_..._Linux_arm64.tar.gz` | Raspberry Pi 4/5, AWS Graviton. |
+#### 🍺 Homebrew (macOS & Linux)
+```bash
+brew tap cytificlabs/tr2rl
+brew install tr2rl
+```
 
-**How to use:**
-1.  **Unzip/Extract** the downloaded file.
-2.  **Move** the `tr2rl` (or `tr2rl.exe`) binary to a folder in your system `PATH` (e.g., `/usr/local/bin` on Linux/Mac).
-3.  **Run** `tr2rl --version` to verify.
+#### 🍨 Scoop (Windows)
+```powershell
+scoop bucket add cytificlabs https://github.com/cytificlabs/scoop-bucket
+scoop install tr2rl
+```
 
-### Option 2: Build from Source
+#### 🐧 Snap Store (Linux / Ubuntu)
+```bash
+snap install tr2rl
+# Note: If not yet stable, try: snap install tr2rl --edge
+```
+
+### Option 2: Download Binaries (Manual)
+Go to the [**Releases Page**](https://github.com/cytificlabs/tr2rl/releases) and download the file for your system.
+
+### Option 3: Build from Source
 ```bash
 git clone https://github.com/cytificlabs/tr2rl.git
 cd tr2rl

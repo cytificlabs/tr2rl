@@ -325,6 +325,46 @@
     <section class="installation"
         style="padding: 4rem 10%; background: #111; border-top: 1px solid #333; border-bottom: 1px solid #333;">
         <h2 style="text-align: center; margin-bottom: 2rem; color: #fff;">Installation Guide</h2>
+
+        <!-- Package Managers -->
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+            <!-- Homebrew -->
+            <div style="background: #1a1a1a; padding: 1.5rem; border: 1px solid #333; border-radius: 8px;">
+                <h3 style="margin-bottom: 1rem; color: #fff;">🍺 Homebrew</h3>
+                <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;">macOS & Linux</p>
+                <code
+                    style="display: block; background: #000; padding: 1rem; border-radius: 6px; color: #3b82f6; font-family: monospace;">
+                    brew tap cytificlabs/tr2rl<br>
+                    brew install tr2rl
+                </code>
+            </div>
+
+            <!-- Scoop -->
+            <div style="background: #1a1a1a; padding: 1.5rem; border: 1px solid #333; border-radius: 8px;">
+                <h3 style="margin-bottom: 1rem; color: #fff;">🍨 Scoop</h3>
+                <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;">Windows</p>
+                <code
+                    style="display: block; background: #000; padding: 1rem; border-radius: 6px; color: #3b82f6; font-family: monospace;">
+                    scoop bucket add cytificlabs<br>
+                    https://github.com/cytificlabs/scoop-bucket<br>
+                    scoop install tr2rl
+                </code>
+            </div>
+
+            <!-- Snap -->
+            <div style="background: #1a1a1a; padding: 1.5rem; border: 1px solid #333; border-radius: 8px;">
+                <h3 style="margin-bottom: 1rem; color: #fff;">🐧 Snap Store</h3>
+                <p style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;">Ubuntu / Linux</p>
+                <code
+                    style="display: block; background: #000; padding: 1rem; border-radius: 6px; color: #3b82f6; font-family: monospace;">
+                    snap install tr2rl<br>
+                    <span style="color: #666; font-size: 0.8rem;"># (Try --edge if new release)</span>
+                </code>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; margin-bottom: 1.5rem; color: #888;">Or Manual Download</h3>
         <div style="overflow-x: auto;">
             <table style="width: 100%; border-collapse: collapse; color: #ccc;">
                 <thead>
@@ -332,7 +372,6 @@
                         <th style="text-align: left; padding: 1rem;">OS</th>
                         <th style="text-align: left; padding: 1rem;">Architecture</th>
                         <th style="text-align: left; padding: 1rem;">File Name</th>
-                        <th style="text-align: left; padding: 1rem;">Notes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -340,43 +379,27 @@
                         <td style="padding: 1rem;">Windows</td>
                         <td style="padding: 1rem;">Intel/AMD</td>
                         <td style="padding: 1rem; color: var(--accent);">Windows_x86_64.zip</td>
-                        <td style="padding: 1rem;">Standard PC/Laptop</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #222;">
                         <td style="padding: 1rem;">Windows</td>
                         <td style="padding: 1rem;">Snapdragon</td>
                         <td style="padding: 1rem; color: var(--accent);">Windows_arm64.zip</td>
-                        <td style="padding: 1rem;">Surface Pro X, etc.</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #222;">
                         <td style="padding: 1rem;">macOS</td>
                         <td style="padding: 1rem;">Apple Silicon</td>
                         <td style="padding: 1rem; color: var(--accent);">Darwin_arm64.tar.gz</td>
-                        <td style="padding: 1rem;">M1, M2, M3 Macs</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #222;">
-                        <td style="padding: 1rem;">macOS</td>
-                        <td style="padding: 1rem;">Intel</td>
-                        <td style="padding: 1rem; color: var(--accent);">Darwin_x86_64.tar.gz</td>
-                        <td style="padding: 1rem;">Older Macs</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #222;">
                         <td style="padding: 1rem;">Linux</td>
-                        <td style="padding: 1rem;">Intel/AMD</td>
-                        <td style="padding: 1rem; color: var(--accent);">Linux_x86_64.tar.gz</td>
-                        <td style="padding: 1rem;">Standard Servers</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 1rem;">Linux</td>
-                        <td style="padding: 1rem;">ARM64</td>
-                        <td style="padding: 1rem; color: var(--accent);">Linux_arm64.tar.gz</td>
-                        <td style="padding: 1rem;">Raspberry Pi, AWS Graviton</td>
+                        <td style="padding: 1rem;">Intel/AMD/ARM</td>
+                        <td style="padding: 1rem; color: var(--accent);">Linux_...tar.gz</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://github.com/cytificlabs/tr2rl/releases" class="btn btn-primary">Go to Downloads</a>
+            <a href="https://github.com/cytificlabs/tr2rl/releases" class="btn btn-secondary">View All Releases</a>
         </div>
     </section>
 
