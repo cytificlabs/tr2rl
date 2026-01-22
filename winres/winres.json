@@ -1,29 +1,9 @@
 {
-  "RT_MANIFEST": {
-    "#1": {
-      "0409": {
-        "identity": {
-          "name": "tr2rl",
-          "version": "1.1.8.0"
-        },
-        "description": "Turn messy text trees into real files",
-        "minimum-os": "win7",
-        "execution-level": "asInvoker",
-        "ui-access": false,
-        "auto-elevate": false,
-        "dpi-awareness": "system",
-        "disable-theming": false
-      }
-    }
-  },
   "RT_GROUP_ICON": {
-    "MAIN_ICON": {
-      "0409": {
-        "priority": 0,
-        "icons": [
-          "icon.png"
-        ]
-      }
+    "APP": {
+      "icons": [
+        "icon.png"
+      ]
     }
   }
 }
