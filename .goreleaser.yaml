@@ -5,6 +5,7 @@ project_name: tr2rl
 before:
   hooks:
     - go mod tidy
+    - go install github.com/tc-hib/go-winres@latest
     - go generate ./...
 
 builds:
