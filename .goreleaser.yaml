@@ -72,6 +72,7 @@ scoops:
 snapcrafts:
   - name: tr2rl
     summary: Turn messy text trees into real files
+    description: "tr2rl (Trees to Reality) is a CLI tool that parses messy text trees, ASCII diagrams, and indented lists into valid project directory structures instantly."
     publish: true
 
 # Release via GitHub Releases is enabled by default.
