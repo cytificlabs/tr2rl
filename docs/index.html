@@ -69,6 +69,51 @@
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero h1,
+        .hero p,
+        .cta-group {
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        .hero p {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .cta-group {
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .demo-container {
+            animation: slideUp 0.8s ease-out forwards;
+            animation-delay: 0.6s;
+            opacity: 0;
         }
 
         /* Nav */
@@ -278,7 +323,12 @@
 <body>
 
     <nav>
-        <div class="logo">tr<span>2</span>rl</div>
+        <div class="logo">
+            <!-- Dynamic Logo Check: Update src to 'assets/logo.png' if available -->
+            <img src="assets/favicon.png" alt="tr2rl logo"
+                style="height: 40px; vertical-align: middle; margin-right: 10px;">
+            tr<span>2</span>rl
+        </div>
         <div class="nav-links">
             <a href="https://github.com/cytificlabs/tr2rl" target="_blank">GitHub</a>
             <a href="https://github.com/cytificlabs/tr2rl/releases" target="_blank">Download</a>

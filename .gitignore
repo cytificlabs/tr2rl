@@ -23,3 +23,7 @@ arxml_explorer/
 # Editor
 .vscode/
 .idea/
+
+# Release Artifacts
+manifests/
+*.snap
