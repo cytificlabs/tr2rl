@@ -153,11 +153,34 @@
 
         /* Hero */
         .hero {
-            padding: 10rem 10% 5rem;
+            padding: 8rem 10% 5rem;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .hero-logo {
+            font-size: 6rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            letter-spacing: -3px;
+            animation: fadeIn 1.2s ease-out;
+            background: linear-gradient(135deg, #fff 30%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .hero-logo span {
+            color: var(--accent);
+            -webkit-text-fill-color: var(--accent);
+        }
+
+        /* Nav Logo Hover */
+        .logo img:hover {
+            transform: rotate(10deg) scale(1.1);
         }
 
         h1 {
@@ -324,10 +347,10 @@
 
     <nav>
         <div class="logo">
-            <!-- Dynamic Logo Check: Update src to 'assets/logo.png' if available -->
-            <img src="assets/favicon.png" alt="tr2rl logo"
-                style="height: 40px; vertical-align: middle; margin-right: 10px;">
-            tr<span>2</span>rl
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                <img src="assets/favicon.png" alt="tr2rl logo"
+                    style="height: 40px; vertical-align: middle; transition: transform 0.3s;">
+            </a>
         </div>
         <div class="nav-links">
             <a href="https://github.com/cytificlabs/tr2rl" target="_blank">GitHub</a>
@@ -336,6 +359,7 @@
     </nav>
 
     <header class="hero">
+        <div class="hero-logo">tr<span>2</span>rl</div>
         <h1>Trees to Reality</h1>
         <p class="lead">Turn messy text lists, ASCII directory trees, and indented outlines into real files and folders
             instantly. The missing bridge between your ideas and your filesystem.</p>
